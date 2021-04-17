@@ -1,0 +1,44 @@
+Announcements are periodic messages sent to one or more public channels.
+They are disabled by default, so you can plan them before running.
+
+In order to create a new announcement, use
+<tab><highlight><symbol>announcement create 'name'<end>
+
+The bot will give you the ID that was assigned for this.
+
+To get a list of announcements, use
+<tab><highlight><symbol>announcements<end>
+
+To view the details of an announcement, use
+<tab><highlight><symbol>announcements view #id<end>
+
+You will then need to change certain aspects of the announcement:
+
+To set the content to display in the accouncement, you either use
+<tab><highlight><symbol>announcement content #id 'content'<end>
+or
+<tab><highlight><symbol>announcement content #id 'filename in data dir'<end>
+
+You can preview your message anytime with 
+<tab><highlight><symbol>announcement preview #id<end>
+
+To select which channels to announce to, use
+<tab><highlight><symbol>announcement channels #id<end>
+
+To change the name of an announcement, use
+<tab><highlight><symbol>announcement rename #id 'new name'<end>
+
+To change the interval of the announcement, use
+<tab><highlight><symbol>announcement interval #id 'interval'<end>
+
+To change the delay between sending to 2 channels, use
+<tab><highlight><symbol>announcement channeldelay #id 'delay'<end>
+
+To delete an announcement, use
+<tab><highlight><symbol>announcement rem #id<end>
+
+To enable an announcement, use
+<tab><highlight><symbol>announcement enable #id<end>
+
+To disable an announcement again, use
+<tab><highlight><symbol>announcement disable #id<end>

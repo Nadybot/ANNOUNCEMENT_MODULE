@@ -1,0 +1,1 @@
+Announcements are periodic messages sent to one or more public channels.

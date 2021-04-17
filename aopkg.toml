@@ -1,0 +1,7 @@
+name = "ANNOUNCEMENT_MODULE"
+description = "A Nadybot module to announce messages"
+version = "1.0.0"
+author = "Nadyita"
+github = "Nadybot/ANNOUNCEMENT_MODULE"
+bot_type = "Nadybot"
+bot_version = "^5.0.0"
