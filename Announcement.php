@@ -2,6 +2,7 @@
 
 namespace Nadybot\User\Modules\ANNOUNCE_MODULE;
 
+use Nadybot\Core\Attributes as NCA;
 use Nadybot\Core\DBRow;
 
 class Announcement extends DBRow {
@@ -16,15 +17,19 @@ class Announcement extends DBRow {
 	public ?int $last_announcement = null;
 
 	/**
-	 * @db:ignore
 	 * @var AnnouncementChannel[]
 	 */
+	#[NCA\DB\Ignore]
 	public array $channels = [];
 
 	public function __construct() {
 		$this->created_on = time();
 	}
 
+	/**
+	 * @return null|array<int>
+	 * @phpstan-return null|array{int,int}
+	 */
 	public function getNextAnnouncement(): ?array {
 		if ($this->last_announcement === null) {
 			return count($this->channels) ? [time(), 0] : null;
