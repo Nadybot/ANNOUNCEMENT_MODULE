@@ -144,7 +144,7 @@ class AnnouncementController extends ModuleInstance {
 	public function getAnnouncements(bool $enabledOnly=false): array {
 		$query = $this->db->table(self::DB_TABLE);
 		if ($enabledOnly) {
-			$query->where("action", true);
+			$query->where("active", true);
 		}
 		/** @var array<int,Announcement> */
 		$tmp = $query->asObj(Announcement::class)
