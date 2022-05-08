@@ -438,7 +438,7 @@ class AnnouncementController extends ModuleInstance {
 			$context->reply($msg);
 			return;
 		}
-		if ($action === "exclude") {
+		if ($subAction === "exclude") {
 			$context->reply($this->unsubscribeChannel($announcement, $channel));
 			return;
 		}
