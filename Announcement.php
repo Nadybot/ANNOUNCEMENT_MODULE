@@ -8,7 +8,7 @@ use Nadybot\Core\DBRow;
 class Announcement extends DBRow {
 	public int $id;
 	public string $name;
-	public string $content;
+	public string $content = "TBD";
 	public string $created_by;
 	public bool $active = false;
 	public int $created_on;

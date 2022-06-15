@@ -17,7 +17,7 @@ class CreateAnnouncementTable implements SchemaMigration {
 		$db->schema()->create($table, function(Blueprint $table) {
 			$table->id();
 			$table->string("name", 100);
-			$table->text("content")->default("TBD");
+			$table->text("content");
 			$table->boolean("active");
 			$table->string("created_by", 15);
 			$table->integer("created_on");

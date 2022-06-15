@@ -1,2 +1,2 @@
-This module allows you to pe;riodically send messages to one or more
+This module allows you to periodically send messages to one or more
 public channels.
